@@ -1,38 +1,49 @@
-.App {
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.paciente {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.2fr 0.2fr;
+  border: 2px solid #36a5fd;
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin: 10px;
+  gap: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  background-color: #0064c8;
+  border: 1px solid #0064c8;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 0.8rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #36a5fd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.consulta {
+  grid-template-columns: 0.2fr 1fr 1fr;
+  border: 2px solid #36a5fd;
+  align-items: center;
+  border-radius: 5px;
+  display: grid;
+  gap: 2rem;
+}
+
+.consultas {
+  grid-column: 1 / -1;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  height: 2rem;
 }
